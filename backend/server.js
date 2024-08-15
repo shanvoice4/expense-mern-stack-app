@@ -17,7 +17,11 @@ const app = express();
 //middlewares
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://expense-mern-stack-app-frontend.onrender.com', // Allow your frontend domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
+  credentials: true // Allow cookies or authorization headers
+}));
 
 //routes
 // user routes
