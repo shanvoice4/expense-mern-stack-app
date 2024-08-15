@@ -1,0 +1,94 @@
+/* Analytics.css */
+
+/* General Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  
+  .mt-3 {
+    margin-top: 1rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    font-size: 1rem;
+    color: #495057;
+  }
+  
+  .text-success {
+    color: #28a745;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+  }
+  
+  /* Progress Circle Styles */
+  .ant-progress-circle {
+    margin: 10px;
+  }
+  
+  .mx-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Category Section */
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .card-body h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 15px;
+  }
+  
+  .card-body .ant-progress {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+  

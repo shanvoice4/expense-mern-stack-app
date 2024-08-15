@@ -1,0 +1,141 @@
+/* Home.css */
+
+/* General Layout */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters h6 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #343a40;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  /* Switch Icons */
+  .switch-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch-icons .mx-2 {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-icons .active-icon {
+    color: #007bff;
+  }
+  
+  .switch-icons .inactive-icon:hover {
+    color: #007bff;
+  }
+  
+  /* Modal */
+  .ant-modal-title {
+    font-size: 1.25rem;
+    color: #343a40;
+  }
+  
+  .ant-modal-footer {
+    display: none;
+  }
+  
+  /* Form */
+  .ant-form-item-label > label {
+    font-weight: 500;
+    color: #343a40;
+  }
+  
+  .ant-form-item .ant-input,
+  .ant-form-item .ant-select-selector {
+    border-radius: 5px;
+  }
+  
+  .ant-form-item .ant-input:focus,
+  .ant-form-item .ant-select-selector:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-end {
+    justify-content: flex-end;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Table */
+  .ant-table {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f1f3f5;
+    color: #495057;
+    font-weight: 500;
+  }
+  
+  .ant-table-tbody > tr > td {
+    color: #343a40;
+  }
+  
+  /* Spinner */
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .switch-icons {
+      margin-top: 10px;
+    }
+  
+    .filters div {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  
+    .btn-primary {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
